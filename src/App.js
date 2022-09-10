@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <div className='message'> States Hook with props </div>
-      <MyGridComponent></MyGridComponent>
+      <div className='container'>
+        <MyGridComponent></MyGridComponent>
+      </div>
     </div>
   );
 }
