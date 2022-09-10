@@ -4,26 +4,25 @@ import React from "react";
 // state hook on props example
 
 export default function SquareComponent(props){
-    console.log(">>square component rendered");
+    // console.log("props : ",props);
 
-    const[currStatus , setCurrStatus] = React.useState(props.status);
-
+    // console.log(">>square component rendered");
     let myStyle = {
-        backgroundColor : currStatus===false ? "#222222" : null,
-        color : currStatus===false ? "salmon" : null,
-        fontSize : currStatus===false ? "2em" : "1.44em",
 
+        backgroundColor : props.status===false ? "#222222" : null,
+        color : props.status===false ? "#adffa4" : null,
+        fontSize : props.status===false ? "2em" : "1.44em",
 
-    }
-    function toggle(){
-        console.log("now switch is : ",(!currStatus ? "on":"off"));
-        setCurrStatus(prevState=>!prevState);
     }
 
     return (
-        <div style={myStyle} onClick={toggle}>
-            {currStatus===false ? "X":"O"}
+        <div style={myStyle} onClick={()=>props.handleClick(props.id)}>
+            {props.status===false ? "X":"O"}
         </div>
     )
-
+    // return (
+    //     <div style={myStyle} onClick={()=>props.handleClick(props.id)}>
+    //         {`${props.id}`}
+    //     </div>
+    // )
 }

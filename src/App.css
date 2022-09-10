@@ -47,6 +47,7 @@
 }
 .container{
   display: flex;
+  align-content: center;
   justify-content: center;
 }
 
@@ -62,7 +63,7 @@
 .grid-boxes div{
   cursor: pointer;
   user-select: none;
-  border: 3px salmon solid;
+  border: 3px rgb(8, 7, 7) solid;
   display: flex;
   align-items: center;
   justify-content: center;
