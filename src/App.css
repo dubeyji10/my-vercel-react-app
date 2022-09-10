@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+.message{
+
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.grid-boxes{
+  padding: 10px 10px 10px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap:1rem;
+}
+
+.grid-boxes div{
+  cursor: pointer;
+  user-select: none;
+  border: 3px salmon solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

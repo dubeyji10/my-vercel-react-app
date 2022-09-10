@@ -1,3 +1,6 @@
+## Hosting react app I build while going through freeCodeCamp.org react course
+### Link to course : [here](https://www.youtube.com/watch?v=bMknfKXIFA8)
+
 # Create React App
 
 This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
